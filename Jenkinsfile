@@ -12,7 +12,7 @@ node {
        }
        stage('Start container') {
          sh 'docker-compose kill wordpress'
-         sh 'docker-compose rm wordpress'
+         sh 'docker-compose rm -f wordpress'
          sh 'docker-compose up -d'
        }
 
