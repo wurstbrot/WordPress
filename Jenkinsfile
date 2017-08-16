@@ -11,9 +11,9 @@ node {
             sh 'docker build -t wordpress .'
        }
        stage('Start container') {
-         sh 'docker-compuse kill'
-         sh 'docker-compuse rm'
-         sh 'docker-compuse up -d'
+         sh 'docker-compose kill'
+         sh 'docker-compose rm'
+         sh 'docker-compose up -d'
        }
 
     }
