@@ -3,6 +3,7 @@ version: '3.1'
 services:
 
   wordpress:
+    name: wordpress
     image: wordpress
     ports:
       - 80:80
@@ -11,5 +12,6 @@ services:
 
   mysql:
     image: mysql:5.7
+    name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: 8fop4hnTwPwgSWEllVzn
